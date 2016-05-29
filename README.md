@@ -20,4 +20,4 @@ MEAN Stack을 이용한 웹 페이지 개발을 위해 협업할 Repository입�
 ## Wiki 이용하기
 스터디를 진행하며 문서화가 필요한 내용은 Wiki에 올리는 것으로 합니다.
 
-[위키링크 바로가기](https://github.com/jayjnu/MEAN-Study/wiki)
+[위키링크 바로가기](https://github.com/jayjnu/MEAN/wiki)
