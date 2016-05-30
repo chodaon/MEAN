@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title> 앵귤러 테스트 </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script>
+		(function(){
+			var app = angular.module('test', []);
+			app.controller('MembersInfo', function(){
+				this.list = members;
+			});
+
+			/* DB에서 불러온 JSON이라고 가정 */
+			var members = [
+				{name:"김은수", id:"goldsilverwater"},
+				{name:"고규훈", id:"jadestern"},
+				{name:"이종환", id:"hardsoul"},
+				{name:"정진우", id:"jayjnu"},
+				{name:"조다온", id:"chodaon"},
+				{name:"한윤진", id:"yjhan1005"}
+			];
+		})();
+	</script>
+</head>
+<body data-ng-app="test">
+	<ul data-ng-controller="MembersInfo as members">
+		<li data-ng-repeat="person in members.list">
+			<strong>성함: {{person.name}}</strong><br/>
+			Github id: {{ person.id }}
+		</li>
+	</ul>
+</body>
+</html>
