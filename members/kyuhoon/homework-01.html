@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/default.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+        code{
+            font-size: 16px;
+        }
+        div{
+            width: 1024px;
+            margin: 0 auto;
+        }
+        h2{ text-align: center;}
+    </style>
+</head>
+
+<body>
+    <h2>1. for문을 이용해서 console에 다음의 메세지를 출력하시오</h2>
+    <div>
+        <pre>
+            <code class="JavaScript">
+                var text = "";
+                for(var i=0;i<6;i++){
+                    text += "가";
+                    console.log(text);
+                }
+            </code>
+        </pre>
+        <script>
+            var text = "";
+            for(var i=0;i<6;i++){
+                text += "가";
+                console.log(text);
+            }
+        </script>
+    </div>
+    <h2>2. 다음의 코드를 실행하면 정상적으로 작동되지 않는데, 제대로 작동하도록 고치기</h2>
+    <div>
+        <pre>
+             <code class="JavaScript">
+                function foo(){
+                    <s>var</s> x = 7;
+                }
+                console.log(x);
+            </code>
+        </pre>
+    </div>
+    <h2>3. console은 어떤 값을 출력하는가</h2>
+    <div>
+        <pre>
+             <code class="JavaScript">
+                 var x = 1, y = 2;
+                 function foo(){
+                     var x = y = 7;
+                 }
+                 foo();
+                 console.log(x + y); // 다음의 값은?
+                 8 //답
+                 // var x는 지역변수, y는 전역변수.
+                 // foo에 있는 var x는 밖에 있는 x와 상관없다.
+                 // y만 상관있기 때문에, 1+7 = 8이 됨.
+            </code>
+        </pre>
+    </div>
+    <h2>4. 다음 변수 str을 이용하여 문장을 콘솔에 다음과 같이 출력하기</h2>
+    <div>
+        <pre>
+             <code class="JavaScript">
+                 var str = "자바스크립트를 배우는 것은 많은 시간과 노력이 들어간다.";
+                 var res = str.replace(/ /gi, "\n");
+                 console.log(res);
+            </code>
+        </pre>
+    </div>
+</body>
+</html>
