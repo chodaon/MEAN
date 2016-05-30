@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>이종환사이트</title>
+	<style>
+
+	</style>
+	<script>
+		// var str = "자바스크립트를 배우는 것은 많은 시간과 노력이 들어간다.";
+
+    /* 결과물(콘솔창):
+        자바스크립트를
+        배우는
+        것은
+        많은
+        시간과
+        노력이
+        들어간다
+    */
+     var str = ["자바스크립트를", "배우는", "것은", "많은", "시간과", "노력이", "들어간다."];
+     for (var i =0; i<str.length; i++) {
+
+     console.log(str[i] + "<br/>");
+     	
+     }
+
+     var soul = "자바스크립트를 배우는 것은 많은 시간과 노력이 들어간다.";
+     document.write(soul.substring(0,7)+ "<br/>");
+     document.write(soul.substring(8,11)+ "<br/>");
+     document.write(soul.substring(12,14)+ "<br/>");
+     document.write(soul.substring(15,17)+ "<br/>");
+     document.write(soul.substring(18,21)+ "<br/>");
+     document.write(soul.substring(22,25)+ "<br/>");
+     document.write(soul.substring(26,31)+ "<br/> <br />");
+
+
+
+	var soul="자바스크립트를, 배우는, 것은, 많은, 시간과, 노력이, 들어간다.";
+	var test=soul.split(",");
+	for (var i=0; i<test.length; i++) {
+		document.write(test[i]+"<br />");
+	}
+
+	//...
+	</script>
+</head>
+<body>
+	
+</body>

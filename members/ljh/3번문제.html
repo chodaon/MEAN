@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>이종환사이트</title>
+	<style>
+
+	</style>
+	<script>
+	var x = 1, y = 2;
+    function foo(){
+        var x = y = 7;
+    }
+    foo();
+    console.log(x + y); // 다음의 값은?
+
+    //종환 : 7 ,3 
+
+    //은수 :14
+
+    //정답은 8 
+    //이유는 : var x = 1이고, y=7임  :전역변수
+    //function 안에서는 var x=이라고 정의가 되어있지만. Y= 7이라고만 정의 고로 Y는 전역변수처럼 떠다니는 현상방생.
+    //X는 전역변수의 1을 가지고 있고, Y는 전역변수 2 그후에 전역변수7이 정의되서 7의 값을 가지게되어 
+    // 1+ 7 = 8의 값을 출력 
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
